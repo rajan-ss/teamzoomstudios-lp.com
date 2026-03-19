@@ -1,0 +1,72 @@
+@layer components {
+  .btn {
+    @apply inline-flex 
+    items-center 
+    justify-center 
+    cursor-pointer 
+    rounded-sm 
+    lg:min-w-[12.5rem]
+    px-8 
+    py-3 
+    text-base/none
+    lg:text-lg
+    text-center 
+    font-bold 
+    no-underline 
+    select-none 
+    border 
+    border-solid
+    transition 
+    ease-in-out 
+    duration-500 
+    focus:outline-none
+    disabled:opacity-75 
+    disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply bg-primary 
+    text-white 
+    border-primary 
+    hover:bg-primary/75 
+    hover:text-white 
+    hover:border-primary/75
+    focus:bg-primary/75
+    focus:text-white 
+    focus:border-primary/75
+    active:bg-primary/50 
+    active:border-primary/50;
+  }
+
+  .btn-dark {
+    @apply bg-black 
+    text-white 
+    border-black 
+    hover:bg-primary 
+    hover:text-white 
+    hover:border-primary
+    focus:bg-primary
+    focus:text-white 
+    focus:border-primary
+    active:bg-primary/50 
+    active:border-primary/50;
+  }
+
+  .btn-light {
+    @apply bg-white 
+    text-black 
+    border-white 
+    hover:bg-primary 
+    hover:text-white 
+    hover:border-primary
+    focus:bg-primary
+    focus:text-white 
+    focus:border-primary
+    active:bg-primary/50 
+    active:border-primary/50;
+  }
+
+  .btn-block {
+    @apply block w-full;
+  }
+}

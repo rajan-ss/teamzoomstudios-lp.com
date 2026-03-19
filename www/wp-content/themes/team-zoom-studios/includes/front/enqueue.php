@@ -1,0 +1,45 @@
+<?php
+
+function tzs_enqueue()
+{
+  wp_register_style(
+    'tzs_font_cormorant_and_mulish',
+    'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700;800;900&display=swap',
+    [],
+    null
+  );
+  wp_register_style(
+    'tzs_icons',
+    get_theme_file_uri('lib/icons/style.css')
+  );
+  wp_register_style(
+    'tzs_swiper',
+    get_theme_file_uri('lib/swiper/swiper-bundle.min.css')
+  );
+  wp_register_style(
+    'tzs_theme',
+    get_theme_file_uri('assets/css/style.css')
+  );
+  wp_register_script(
+    'tzs_jquery',
+    get_theme_file_uri('lib/jquery.min.js')
+  );
+  wp_register_script(
+    'tzs_swiper',
+    get_theme_file_uri('lib/swiper/swiper-bundle.min.js')
+  );
+  wp_register_script(
+    'tzs_js',
+    get_theme_file_uri('assets/js/main.js')
+  );
+
+  wp_enqueue_style('tzs_font_cormorant_and_mulish');
+  wp_enqueue_style('tzs_icons');
+  wp_enqueue_style('tzs_slick');
+  wp_enqueue_style('tzs_swiper');
+  wp_enqueue_style('tzs_theme');
+  wp_enqueue_script('tzs_jquery');
+  wp_enqueue_script('tzs_slick');
+  wp_enqueue_script('tzs_swiper');
+  wp_enqueue_script('tzs_js');
+}

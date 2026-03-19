@@ -1,0 +1,298 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "ss-white",
+          "color": "#ffffff",
+          "name": "SS White"
+        },
+        {
+          "slug": "ss-black",
+          "color": "#000000",
+          "name": "SS Black"
+        },
+        {
+          "slug": "ss-dark-grey",
+          "color": "#222222",
+          "name": "SS Dark Grey"
+        },
+        {
+          "slug": "ss-primary",
+          "color": "#CF9FFF",
+          "name": "SS Primary"
+        },
+        {
+          "slug": "ss-accent",
+          "color": "#12598A",
+          "name": "SS Accent"
+        },
+        {
+          "slug": "ss-warning",
+          "color": "#FECE09",
+          "name": "SS Warning"
+        }
+      ],
+      "background": true,
+      "text": true,
+      "link": true,
+      "custom": true,
+      "duotone": [
+        {
+          "slug": "ss-pink-sunset",
+          "colors": ["#11245e", "#dc4379"],
+          "name": "SS Pink Sunset"
+        }
+      ],
+      "defaultGradients": false,
+      "gradients": [
+        {
+          "slug": "ss-summer-dog",
+          "name": "SS Summer Dog",
+          "gradient": "linear-gradient(#a8ff78, #78ffd6)"
+        }
+      ]
+    },
+    "blocks": {
+      "core/site-title": {
+        "color": {
+          "defaultPalette": true,
+          "palette": [
+            {
+              "slug": "ss-primary",
+              "color": "#CF9FFF",
+              "name": "SS Primary"
+            }
+          ],
+          "link": true,
+          "custom": false,
+          "gradients": [],
+          "customGradient": false
+        },
+        "typography": {
+          "fontFamilies": [
+            {
+              "fontFamily": "Cormorant Garamond, serif",
+              "slug": "ss-cormorant-garamond",
+              "name": "SS Cormorant Garamond"
+            }
+          ]
+        }
+      },
+      "core/cover": {
+        "color": {
+          "duotone": [],
+          "customDuotone": false
+        }
+      },
+      "core/preformatted": {
+        "typography": {
+          "fontSizes": [],
+          "customFontSize": false
+        }
+      }
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "typography": {
+      "fluid": true,
+      "fontSizes": [
+        {
+          "fluid": {
+            "max": "0.89rem",
+            "min": "0.8rem"
+          },
+          "name": "Small",
+          "slug": "sm",
+          "size": "0.8rem"
+        },
+        {
+          "fluid": {
+            "max": "1.13rem",
+            "min": "1rem"
+          },
+          "name": "Base",
+          "slug": "base",
+          "size": "1rem"
+        },
+        {
+          "fluid": {
+            "max": "1.5rem",
+            "min": "1.25rem"
+          },
+          "name": "Medium",
+          "slug": "md",
+          "size": "1.25rem"
+        },
+        {
+          "fluid": {
+            "max": "2rem",
+            "min": "1.56rem"
+          },
+          "name": "Large",
+          "slug": "lg",
+          "size": "1.56rem"
+        },
+        {
+          "fluid": {
+            "max": "2.66rem",
+            "min": "1.95rem"
+          },
+          "name": "Extra Large",
+          "slug": "xl",
+          "size": "1.95rem"
+        },
+        {
+          "fluid": {
+            "max": "3.55rem",
+            "min": "2.44rem"
+          },
+          "name": "Double Extra Large",
+          "slug": "2xl",
+          "size": "2.44rem"
+        },
+        {
+          "fluid": {
+            "max": "4.73rem",
+            "min": "3.05rem"
+          },
+          "name": "Double Extra Large",
+          "slug": "2xl",
+          "size": "3.05rem"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "Mulish, sans-serif",
+          "slug": "ss-mulish",
+          "name": "SS mulish"
+        }
+      ],
+      "lineHeight": true,
+      "dropCap": true,
+      "fontWeight": true,
+      "fontStyle": true,
+      "textTransform": true,
+      "letterSpacing": true,
+      "textDecoration": true
+    },
+    "layout": {
+      "contentSize": "1312px",
+      "wideSize": "1400px"
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "units": ["px", "rem", "vh", "vw", "%"],
+      "blockGap": true
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--ss-black)",
+      "background": "var(--wp--preset--color--ss-white)"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontSize": "clamp(3.05rem, 3.06vw + 2.29rem, 4.73rem)",
+          "lineHeight": "1.2"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem)",
+          "lineHeight": "1.2"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem)",
+          "lineHeight": "1.2"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "clamp(1.56rem, 0.79vw + 1.36rem, 2rem)",
+          "lineHeight": "1.2"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem)",
+          "lineHeight": "1.2"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "clamp(1rem, 0.23vw + 0.94rem, 1.13rem)",
+          "lineHeight": "1.2"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--ss-primary)"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "gradient": "var(--wp--preset--gradient--ss-summer-dog)"
+        }
+      },
+      "core/pullquote": {
+        "border": {
+          "width": "2px",
+          "radius": "10px",
+          "style": "solid",
+          "color": "var(--wp--preset--color--ss-primary)"
+        }
+      },
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--ss-cormorant-garamond)"
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--ss-mulish)",
+      "fontSize": "1rem",
+      "fontStyle": "normal",
+      "fontWeight": "normal",
+      "lineHeight": "inherit",
+      "textDecoration": "none",
+      "textTransform": "none"
+    },
+    "spacing": {
+      "margin": {
+        "top": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px"
+      },
+      "blockGap": "4rem"
+    }
+  },
+  "customTemplates": [
+    {
+      "name": "full-width-page",
+      "title": "Full Width Page",
+      "postTypes": ["page"]
+    }
+  ]
+}

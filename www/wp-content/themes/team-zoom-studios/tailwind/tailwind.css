@@ -1,0 +1,11 @@
+@import 'variables.css';
+@import 'tailwindcss/base';
+@import 'base/fonts.css';
+@import 'base/resets.css';
+@import 'base/typography.css';
+@import 'tailwindcss/components';
+@import 'components/layout.css';
+@import 'components/form.css';
+@import "components/btn.css";
+@import "components/carousel.css";
+@import 'tailwindcss/utilities';

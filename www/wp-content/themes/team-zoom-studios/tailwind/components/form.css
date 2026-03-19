@@ -1,0 +1,172 @@
+/* Gravity Form Default Styling */
+
+.gform_1 {
+  @apply text-center;
+}
+
+.gform_fields {
+  @apply flex
+  flex-wrap
+  -mx-2;
+}
+
+.gfield {
+  @apply mb-4
+  basis-full
+  max-w-[100%]
+  px-2;
+}
+
+.gfield-md-half {
+  @apply md:basis-1/2
+  md:max-w-[50%];
+}
+.gfield-lg-third {
+  @apply lg:basis-1/3
+  lg:max-w-[33.333333%];
+}
+.gfield-lg-quarter {
+  @apply lg:basis-4/6
+  lg:max-w-[66.666667%];
+}
+
+.gfield_label {
+  @apply block
+  text-base
+  text-black
+  font-medium
+  mb-2;
+}
+
+.hidden_label .gfield_label {
+  @apply hidden;
+}
+
+.ginput_container input:not([type='radio']):not([type='checkbox']):not([type='submit']),
+.ginput_container select,
+.ginput_container textarea {
+  @apply h-12
+  lg:h-[3.125rem]
+  bg-white
+  border
+  border-solid
+  border-gray-200
+  rounded
+  text-black
+  w-full
+  py-2
+  px-3
+  sm:px-5
+  outline-none
+  text-base
+  font-normal
+  focus:border-black
+  appearance-none
+  resize-none;
+}
+
+.gfield_error .ginput_container input:not([type='radio']):not([type='checkbox']):not([type='submit']),
+.gfield_error .ginput_container select,
+.gfield_error .ginput_container textarea {
+  @apply border-red-400;
+}
+
+.ginput_container textarea {
+  @apply h-12
+  lg:h-[3.125rem]
+  min-h-[3rem]
+  lg:min-h-[3.125rem];
+}
+
+.gform_2 .ginput_container input:not([type='radio']):not([type='checkbox']):not([type='submit']),
+.gform_2 .ginput_container select,
+.gform_2 .ginput_container textarea {
+  @apply h-11
+  lg:h-12;
+}
+
+.footer-form .ginput_container textarea {
+  @apply h-24
+  lg:h-28
+  min-h-[96px]
+  lg:min-h-[112px];
+}
+
+.gform_footer {
+  @apply relative
+  inline-block;
+}
+
+.gfield_required_text {
+  @apply hidden;
+}
+
+.gform_button {
+  @apply btn
+  btn-primary
+  rounded-[2rem];
+}
+
+.gform_submission_error {
+  @apply text-red-500
+  text-base
+  lg:text-lg;
+}
+
+.validation_message {
+  @apply text-red-500;
+}
+
+.gform_confirmation_message {
+  @apply inline-block
+  bg-green-500
+  p-4
+  border
+  border-solid
+border-white
+  rounded-lg
+  text-base
+text-white
+  lg:text-lg
+  lg:py-6
+  lg:px-4
+  text-center;
+}
+
+.gform_confirmation_message a {
+  @apply text-white 
+  underline 
+  whitespace-nowrap 
+  hover:opacity-75 
+  hover:no-underline;
+}
+
+.gform_validation_errors {
+  @apply text-center;
+}
+.gform_validation_errors .gform_submission_error {
+  @apply text-base
+  text-white
+  font-semibold
+  mb-4
+  bg-red-400
+  p-4
+  w-full
+  lg:text-lg;
+}
+
+.gform_required_legend {
+  @apply hidden;
+}
+
+.validation_message {
+  @apply hidden
+  text-base;
+}
+.gform_ajax_spinner {
+  @apply absolute
+  top-2/4
+  -translate-y-2/4
+  right-4
+  !block;
+}

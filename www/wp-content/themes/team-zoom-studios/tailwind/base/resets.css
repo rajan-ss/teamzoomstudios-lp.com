@@ -1,0 +1,52 @@
+@layer base {
+  html,
+  body {
+    @apply h-full w-full;
+  }
+
+  body {
+    @apply min-w-[320px] font-base font-normal antialiased text-base/normal lg:text-lg bg-white text-black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mb-2 leading-[1.2];
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  a {
+    @apply text-primary no-underline transition-all;
+  }
+
+  picture {
+    @apply block;
+  }
+
+  .site-content {
+    @apply grow;
+  }
+
+  .site-header,
+  .site-content,
+  .site-footer {
+    @apply shrink-0;
+  }
+
+  .site-wrapper {
+    @apply min-w-[20rem] mx-auto my-0 flex min-h-full relative overflow-hidden items-stretch flex-col;
+  }
+
+  .stretched-link {
+    @apply after:absolute
+    after:inset-0
+    after:z-[1]
+    pointer-events-auto;
+  }
+}

@@ -1,0 +1,53 @@
+@layer components {
+  .site-content {
+    @apply grow;
+  }
+
+  .site-header,
+  .site-content,
+  .site-footer {
+    @apply shrink-0;
+  }
+
+  .site-wrapper {
+    @apply min-w-[20rem] mx-auto my-0 flex min-h-full relative overflow-hidden items-stretch flex-col;
+  }
+}
+
+.ui-datepicker {
+  @apply bg-white;
+}
+
+.ui-datepicker-next {
+  @apply float-right;
+}
+
+.ui-datepicker-header {
+  @apply bg-gray-700
+  text-white
+  p-2
+  text-xs;
+}
+
+.ui-datepicker-header select {
+  @apply text-black;
+}
+
+.ui-datepicker-calendar {
+  @apply w-full;
+}
+
+.ui-datepicker-calendar th {
+  @apply uppercase;
+}
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
+  @apply border
+  border-gray-400
+  text-gray-700
+  h-auto
+  leading-normal
+  p-1
+  text-center
+  text-xs;
+}
