@@ -106,11 +106,10 @@
 </section>
 <!-- End Service Section -->
 
-<section class="bg-cover bg-center bg-no-repeat py-12 lg:py-16 xl:py-28" style="background-image: url('/wp-content/uploads/cta-banner-bg-cover.jpg');">
+<section class="bg-cover bg-center bg-no-repeat py-12 lg:py-16 xl:py-28" style="background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/cta-banner-bg-cover.jpg')); ?>');">
   <div class="container text-white sm:last-of-type:[&_p]:mb-8 lg:last-of-type:[&_p]:mb-12">
     <h2 class="uppercase mb-4 lg:mb-6">WE CAN’T WAIT TO MEET YOU!</h2>
     <p>Schedule your first zoom call or in-person meeting today!</p>
-
     <a href="#leadForm" class="js-has-smooth btn btn-light">Request A Quote</a>
   </div>
 </section>
